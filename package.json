@@ -1,0 +1,19 @@
+{
+  "name": "bills",
+  "version": "1.0.0",
+  "description": "This is a Bills Application to manage your incomes and expenses.",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bills"
+  ],
+  "author": " <Kenji Mukai>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^1.0.0-beta.2",
+    "express": "^4.14.0"
+  }
+}

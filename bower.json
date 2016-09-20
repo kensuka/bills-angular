@@ -1,0 +1,26 @@
+{
+  "name": "bills",
+  "description": "This is a Bills Application to manage your incomes and expenses.",
+  "main": "server",
+  "authors": [
+    "<Kenji Mukai>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bills"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "materialize": "^0.97.7",
+    "angular-materialize": "^0.2.1",
+    "angular-ui-router": "^0.3.1"
+  }
+}

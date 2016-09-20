@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bills</title>
+
+    <link type="text/css" rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.css"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/theme-default.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/materialize/dist/js/materialize.js"></script>
+    <script src="/bower_components/angular-materialize/src/angular-materialize.js"></script>
+
+    <!-- BILLS COMPONENTS -->
+    <script src="app.js"></script>
+    <script src="app/dashboard/dashboard.state.js"></script>
+    <script src="app/dashboard/dashboard.controller.js"></script>
+    <script src="app/expenses/expenses.state.js"></script>
+    <script src="app/expenses/expenses.controller.js"></script>
+    <script src="app/incomes/incomes.controller.js"></script>
+    <script src="app/incomes/incomes.state.js"></script>
+</head>
+<body ng-app="bills">
+<header>
+    <ul id="slide-out" class="side-nav fixed">
+        <li>
+            <div class="userView">
+                <img class="background responsive-img" src="/static/img/background-side.jpg">
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        </li>
+        <li><a ui-sref="dashboard"><i class="material-icons left">view_module</i>Resume</a></li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a ui-sref="incomes"><i class="material-icons left">add</i>Incomes</a></li>
+        <li><a ui-sref="expenses"><i class="material-icons left">remove</i>Expenses</a></li>
+    </ul>
+</header>
+<main>
+    <div ui-view>
+
+    </div>
+</main>
+
+
+</body>
+</html>
