@@ -12,3 +12,4 @@ $ npm install
 ```sh
 $ node server
 ```
+Now the application is running in http://localhost:3000/
