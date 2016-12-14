@@ -7,3 +7,8 @@ $ bower install
 
 $ npm install
 ```
+
+#### Run the Application
+```sh
+$ node server
+```
