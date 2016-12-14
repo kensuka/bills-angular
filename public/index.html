@@ -14,39 +14,64 @@
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/materialize/dist/js/materialize.js"></script>
     <script src="/bower_components/angular-materialize/src/angular-materialize.js"></script>
+    <script src="/bower_components/chart.js/dist/Chart.js"></script>
+    <script src="/bower_components/angular-chart.js/angular-chart.js"></script>
 
-    <!-- BILLS COMPONENTS -->
+    <!-- BILLS -->
     <script src="app.js"></script>
+    <script src="app/service/movement.service.js"></script>
     <script src="app/dashboard/dashboard.state.js"></script>
     <script src="app/dashboard/dashboard.controller.js"></script>
     <script src="app/expenses/expenses.state.js"></script>
     <script src="app/expenses/expenses.controller.js"></script>
     <script src="app/incomes/incomes.controller.js"></script>
     <script src="app/incomes/incomes.state.js"></script>
+    <script src="app/login/login.state.js"></script>
+    <script src="app/login/login.controller.js"></script>
 </head>
 <body ng-app="bills">
 <header>
-    <ul id="slide-out" class="side-nav fixed">
-        <li>
-            <div class="userView">
-                <img class="background responsive-img" src="/static/img/background-side.jpg">
-                <br/>
-                <br/>
-                <br/>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="badges.html"><i class="material-icons left">power_settings_new</i></a></li>
+                </ul>
+                <ul id="slide-out" class="side-nav fixed">
+                    <li>
+                        <div class="userView">
+                            <img class="background responsive-img" src="/static/img/background-side.jpg">
+                            <a href="#!user"><img class="circle" src="/static/img/user.png"></a>
+                            <a href="#!name"><span class="white-text name"></span></a>
+                            <a href="#!email"><span class="white-text email"></span></a>
+                        </div>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li ui-sref-active="active-menu"><a ui-sref="dashboard"><i class="material-icons">view_module</i>Resume</a></li>
+
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+
+                    <li ui-sref-active="active-menu"><a ui-sref="incomes"><i class="material-icons ">add</i>Incomes</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+
+                    <li ui-sref-active="active-menu"><a ui-sref="expenses"><i class="material-icons">remove</i>Expenses</a></li>
+                </ul>
+
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
-        </li>
-        <li><a ui-sref="dashboard"><i class="material-icons left">view_module</i>Resume</a></li>
 
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a ui-sref="incomes"><i class="material-icons left">add</i>Incomes</a></li>
-        <li><a ui-sref="expenses"><i class="material-icons left">remove</i>Expenses</a></li>
-    </ul>
+        </nav>
+    </div>
 </header>
-<main>
-    <div ui-view>
 
+<main>
+
+    <div ui-view>
     </div>
 </main>
 
