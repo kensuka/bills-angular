@@ -1,6 +1,8 @@
 # bills-angular
 This is a Bill application based on Angular JS.
 
+You will need the REST service: https://github.com/kensuka21/bills-rest
+
 #### Install Bower And Node Dependencies
 ```sh
 $ bower install
