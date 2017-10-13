@@ -5,7 +5,7 @@ about how much money you have and how much you wasted.
 You will need the REST service: https://github.com/kensuka21/bills-rest
 
 
-![alt text](screenshots/demo.png "")
+![alt text](screenshot/demo.png "")
 
 
 #### Install Bower And Node Dependencies
