@@ -18,11 +18,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.8",
-    "materialize": "^0.97.7",
-    "angular-materialize": "^0.2.1",
-    "angular-ui-router": "^0.3.1",
-    "chart.js": "npm:chart.js#latest",
-    "angular-chart.js": "^1.0.2"
+    "angular": "1.5.8",
+    "materialize": "0.97.7",
+    "angular-materialize": "0.2.1",
+    "angular-ui-router": "0.3.1",
+    "angular-chart.js": "1.0.2"
   }
 }

@@ -4,7 +4,8 @@
   "description": "This is a Bills Application to manage your incomes and expenses.",
   "main": "server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
   },
   "keywords": [
     "bills"
@@ -12,6 +13,6 @@
   "author": " <Kenji Mukai>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "4.14.0"
   }
 }
